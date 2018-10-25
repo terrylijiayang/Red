@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/backco"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:id="@+id/leftpag"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+        <RadioGroup
+            android:id="@+id/rg"
+            android:paddingRight="-5dp"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@color/whitecolor"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/mrec"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:background="@color/backcolor"
+                android:gravity="center"
+                android:text="为您推荐"
+                />
+
+            <RadioButton
+                android:id="@+id/mcare"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="护肤"
+                />
+
+            <RadioButton
+                android:id="@+id/mmake"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="彩妆"
+                />
+
+            <RadioButton
+                android:id="@+id/mperson"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="个人护理" />
+
+            <RadioButton
+                android:id="@+id/mhealth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="保健品"
+                />
+
+            <RadioButton
+                android:id="@+id/mbaby"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="母婴" />
+
+            <RadioButton
+                android:id="@+id/mpackge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="包包"
+                />
+            <RadioButton
+                android:id="@+id/maccessories"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="配饰"
+                />
+
+            <RadioButton
+                android:id="@+id/munderwear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="服装内衣" />
+
+            <RadioButton
+                android:id="@+id/mshow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="鞋靴" />
+
+            <RadioButton
+                android:id="@+id/mfurnishing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="家居"
+                />
+
+            <RadioButton
+                android:id="@+id/mtv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="家电数码" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rtbody"
+        android:layout_width="295dp"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@id/leftpag"
+        android:layout_marginLeft="-297dp"
+        android:layout_marginTop="15dp"
+        >
+    </RelativeLayout>
+</LinearLayout>

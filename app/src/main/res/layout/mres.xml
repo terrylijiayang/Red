@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/whitecolor"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:background="@color/whitecolor"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/righttop"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="150dp"
+                android:text="分类推荐"
+                android:textSize="22sp"
+                android:paddingLeft="16dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorAccent"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_width="100dp"
+                android:text="查看更多"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="12dp"
+                android:textSize="18sp"
+                android:gravity="right"
+                android:textColor="@color/more"
+                android:layout_height="50dp" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/add"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal"
+                android:layout_width="270dp"
+                android:layout_height="70dp">
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/res5" />
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/res21" />
+                <ImageView
+                    android:layout_width="90dp"
+                    android:background="@drawable/res22"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/whitecolor"
+                android:orientation="horizontal"
+                android:layout_width="270dp"
+                android:layout_height="33dp">
+                <TextView
+                    android:id="@+id/imageView5"
+                    android:layout_width="90dp"
+                    android:gravity="center"
+                    android:text="面膜"
+                    android:layout_height="match_parent"
+                    />
+                <TextView
+                    android:id="@+id/imageView6"
+                    android:layout_width="90dp"
+                    android:text="防晒"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    />
+                <TextView
+                    android:layout_width="90dp"
+                    android:text="唇妆"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="270dp"
+                android:layout_height="70dp">
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/res22" />
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/res29" />
+                <ImageView
+                    android:layout_width="90dp"
+                    android:background="@drawable/jm5"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/whitecolor"
+                android:orientation="horizontal"
+                android:layout_width="270dp"
+                android:layout_height="32dp">
+                <TextView
+                    android:id="@+id/imageView5"
+                    android:layout_width="90dp"
+                    android:text="洁面"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    />
+                <TextView
+                    android:id="@+id/imageView6"
+                    android:layout_width="90dp"
+                    android:text="眼部护理"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    />
+                <TextView
+                    android:layout_width="90dp"
+                    android:text="眼影"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="270dp"
+                android:layout_height="70dp">
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/res1" />
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/res25" />
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/res3" />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/whitecolor"
+                android:orientation="horizontal"
+                android:layout_width="270dp"
+                android:layout_height="30dp">
+                <TextView
+                    android:id="@+id/imageView5"
+                    android:layout_width="90dp"
+                    android:text="粉底"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    />
+                <TextView
+                    android:id="@+id/imageView6"
+                    android:layout_width="90dp"
+                    android:text="卸妆"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    />
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="香水" />
+                <View
+                    android:layout_width="257dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_height="1dp"
+                    android:background="@color/backco"
+                    android:layout_marginLeft="-260dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <RelativeLayout
+                android:id="@+id/righttop"
+                android:layout_marginTop="360dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="品牌推荐"
+                    android:textSize="22sp"
+                    android:paddingLeft="16dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorAccent"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="100dp"
+                    android:text="查看更多"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="12dp"
+                    android:textSize="18sp"
+                    android:gravity="right"
+                    android:textColor="@color/more"
+                    android:layout_height="50dp" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/add"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="20dp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="270dp"
+                    android:layout_height="70dp">
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="90dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/res27" />
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="90dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/res2" />
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:background="@drawable/res3"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@color/whitecolor"
+                    android:orientation="horizontal"
+                    android:layout_width="270dp"
+                    android:layout_height="33dp">
+                    <TextView
+                        android:id="@+id/imageView5"
+                        android:layout_width="90dp"
+                        android:gravity="center"
+                        android:text="面膜"
+                        android:layout_height="match_parent"
+                        />
+                    <TextView
+                        android:id="@+id/imageView6"
+                        android:layout_width="90dp"
+                        android:text="防晒"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        />
+                    <TextView
+                        android:layout_width="90dp"
+                        android:text="唇妆"
+                        android:gravity="center"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="270dp"
+                    android:layout_height="70dp">
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="90dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/res29" />
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="90dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/res28" />
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:background="@drawable/res6"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@color/whitecolor"
+                    android:orientation="horizontal"
+                    android:layout_width="270dp"
+                    android:layout_height="32dp">
+                    <TextView
+                        android:id="@+id/imageView5"
+                        android:layout_width="90dp"
+                        android:text="面膜"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        />
+                    <TextView
+                        android:id="@+id/imageView6"
+                        android:layout_width="90dp"
+                        android:text="防晒"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        />
+                    <TextView
+                        android:layout_width="90dp"
+                        android:text="唇妆"
+                        android:gravity="center"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="270dp"
+                    android:layout_height="70dp">
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="90dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/res26" />
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="90dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/res28" />
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="90dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/res6" />
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@color/whitecolor"
+                    android:orientation="horizontal"
+                    android:layout_width="270dp"
+                    android:layout_height="30dp">
+                    <TextView
+                        android:id="@+id/imageView5"
+                        android:layout_width="90dp"
+                        android:text="面膜"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        />
+                    <TextView
+                        android:id="@+id/imageView6"
+                        android:layout_width="90dp"
+                        android:text="防晒"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        />
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="90dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="唇妆" />
+                    <View
+                        android:layout_width="257dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_height="1dp"
+                        android:background="@color/backco"
+                        android:layout_marginLeft="-260dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

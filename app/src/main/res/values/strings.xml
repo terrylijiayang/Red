@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">小红书</string>
+
+
+    <!--lq-->
+    <string name="app_rec">推荐</string>
+    <string name="app_beauty">美妆</string>
+    <string name="app_care">护肤</string>
+    <string name="app_Percare">个人护理</string>
+    <string name="app_bady">母婴</string>
+    <string name="app_more">更多</string>
+
+</resources>

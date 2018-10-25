@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ljy.red.GoodsDetailActivity">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="320dp"
+            android:background="@drawable/share" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/goods"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/eltamd" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignLeft="@+id/goods"
+        android:layout_alignStart="@+id/goods"
+        android:background="@drawable/bt_shape_red"
+        android:text="限时特价"
+        android:textColor="#ffffff"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/goods"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="12dp"
+        android:text="¥129  "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/component_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/linearLayout5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:text="¥202 6.4折 "
+        tools:ignore="NotSibling,UnknownId" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/component_number"
+        android:layout_alignBottom="@+id/component_number"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="21dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="21dp"
+        android:text="跨境税¥14.15" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="30dp"
+        android:layout_height="17dp"
+        android:background="@drawable/bt_shape_white"
+        android:text="包邮"
+        android:gravity="center"
+        android:textColor="#ff2742"
+        android:layout_alignBaseline="@+id/button4"
+        android:layout_alignBottom="@+id/button4"
+        android:layout_toRightOf="@+id/component_number"
+        android:layout_toEndOf="@+id/component_number" />
+
+    <RelativeLayout
+        android:id="@+id/blue_bg"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="14dp"
+        android:background="#f2f2f2"
+        android:layout_below="@+id/button4"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignStart="@+id/button4">
+
+        <ImageView
+            android:id="@+id/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/red"
+            android:layout_alignBottom="@+id/textView11"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开卡仅¥19.9，此商品省¥18.45"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小红书会员专享价¥125"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/red"
+            android:layout_toEndOf="@+id/red" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/information"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:text="店铺"
+            android:textSize="12sp"
+            tools:ignore="DuplicateIds" />
+
+        <ImageView
+            android:id="@+id/store"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/store"
+            tools:ignore="DuplicateIds" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/information"
+        android:layout_toRightOf="@+id/information">
+
+        <ImageView
+            android:id="@+id/shoppingcart"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/shoppingcart" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="3dp"
+            android:text="购物车"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:background="@color/red"
+        android:onClick="into_shoppingcart"
+        android:text="立即购买"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/button2"
+        android:layout_toEndOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/relativeLayout3"
+        android:layout_toRightOf="@+id/relativeLayout3"
+        android:background="#FE7E8D"
+        android:text="加入购物车"
+        android:textColor="#ffffff"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/blue_bg"
+        android:layout_alignLeft="@+id/blue_bg"
+        android:layout_alignRight="@+id/blue_bg"
+        android:layout_alignStart="@+id/blue_bg"
+        android:layout_below="@+id/blue_bg"
+        android:id="@+id/relativeLayout4">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="32dp"
+            android:layout_height="17dp"
+            android:gravity="center"
+            android:text="自营"
+            android:textColor="#ff2742"
+            android:background="@drawable/bt_shape_white"
+            android:layout_above="@+id/textView16"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView3"
+            android:text="沫洗面奶 207ml"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:text="洗进眼睛也不疼，氨基酸清洁保湿泡"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="开通会员>"
+        android:textColor="#ff2742"
+        android:textSize="12sp"
+        android:layout_alignTop="@+id/blue_bg"
+        android:layout_alignRight="@+id/textView9"
+        android:layout_alignEnd="@+id/textView9" />
+</RelativeLayout>

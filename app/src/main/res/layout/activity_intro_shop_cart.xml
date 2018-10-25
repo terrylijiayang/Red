@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ljy.red.IntroShopCartActivity">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/back"
+            android:contentDescription=""
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="320dp"
+            android:background="@drawable/share"
+            tools:ignore="ContentDescription,RtlHardcoded" /> " />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/goods"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/eltamd"
+        tools:ignore="ContentDescription" />
+
+    <RelativeLayout
+        android:id="@+id/opaque"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="#000000">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:background="#ffffff"
+        android:gravity="bottom"
+        android:id="@+id/blue_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/red"
+            android:text="确定加入"
+            android:textColor="#ffffff"
+            android:textIsSelectable="true"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/goods_small"
+        android:layout_marginBottom="42dp"
+
+        android:layout_above="@+id/component_number"
+        android:layout_alignLeft="@+id/goods"
+        android:layout_alignStart="@+id/goods" />
+
+    <RelativeLayout
+        android:id="@+id/information"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignTop="@+id/blue_bg"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/imageView">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@+id/textView4"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/textView4"
+            android:layout_marginTop="2dp"
+            android:text="¥125"
+            android:textColor="#333" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="¥129     "
+            android:textColor="#ff2274"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/information"
+            android:layout_alignStart="@+id/information"
+            android:layout_alignTop="@+id/information"
+            android:layout_marginLeft="51dp"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="2dp"
+            app:srcCompat="@drawable/red"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="已选：x1 207ml"
+            android:textColor="#333" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="12dp"
+            android:text="该规格参与" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_toEndOf="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5"
+            android:text="限时特价"
+            android:textColor="#ff2742" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/component_number"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/goods"
+        android:layout_alignLeft="@+id/goods"
+        android:layout_alignRight="@+id/goods"
+        android:layout_alignStart="@+id/goods"
+        android:layout_below="@+id/goods"
+        tools:ignore="DuplicateIds">
+
+        <TextView
+            android:id="@+id/component_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goods"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/information"
+            android:layout_toStartOf="@+id/information"
+            android:text="component_number："
+            android:textColor="#333"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,NotSibling" />
+
+        <Button
+            android:id="@+id/number2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginRight="41dp"
+            android:background="@drawable/bt_shape_grey"
+            android:text="2"
+            android:textColor="#333"
+            android:layout_alignBottom="@+id/component_number"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/number1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/number2"
+            android:layout_marginRight="150dp"
+            android:background="@drawable/bt_shape_white"
+            android:text="1"
+            android:textColor="#333"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/数量"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/volume"
+        android:layout_alignLeft="@+id/volume"
+        android:layout_alignStart="@+id/volume"
+        tools:ignore="DuplicateIds">
+
+        <TextView
+            android:id="@+id/数量"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/数量"
+            android:layout_alignStart="@+id/数量"
+            android:layout_below="@+id/volume"
+            android:layout_marginTop="10dp"
+            android:text="数量："
+            android:textColor="#333333"
+            android:textSize="18sp"
+            tools:ignore="NotSibling" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/volume"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:layout_below="@+id/component_number"
+        android:layout_alignLeft="@+id/component_number"
+        android:layout_alignStart="@+id/component_number">
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"
+            android:background="@drawable/bt_shape_white"
+            android:text="207ml"
+            android:textColor="#333"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView8"
+            android:layout_toEndOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="volume："
+            android:textColor="#333"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

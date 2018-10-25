@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ljy.red">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/redbook"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/redbook"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".mresActivity"></activity>
+        <activity android:name=".MeActivity" />
+        <activity android:name=".WelfareHomeActivity" />
+        <activity android:name=".WelfareSalesActivity" />
+        <activity android:name=".WelfareSeedingActivity" />
+        <activity android:name=".GoodsDetailActivity" />
+        <activity android:name=".IntroShopCartActivity" />
+        <activity android:name=".PayActivity" />
+        <activity android:name=".fragment.PayFinishActivity" />
+        <activity android:name=".ShopCartActivity" />
+        <activity android:name=".PayFinishActivity" />
+        <activity android:name=".MessageInfoActivity" />
+        <activity android:name=".RedLoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EditNickNameActivity"></activity>
+    </application>
+
+</manifest>

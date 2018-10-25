@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/backco"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/whitecolor">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:src="@drawable/other" />
+
+        <SearchView
+            android:id="@+id/sv_cus"
+            android:layout_width="340dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/searchview_line"
+            android:iconifiedByDefault="false"
+            android:queryHint="大家都在搜“面膜囤货榜”" />
+    </LinearLayout>
+    <!--线条-->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backco">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+
+                android:background="@color/whitecolor"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <RadioButton
+                    android:id="@+id/rec"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/whitecolor"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:text="@string/app_rec"
+                    android:textColor="@color/titleColor"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/person"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/app_Percare"
+                    android:textColor="@color/noselect" />
+
+                <RadioButton
+                    android:id="@+id/beauty"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/app_beauty"
+                    android:textColor="@color/noselect" />
+
+                <RadioButton
+                    android:id="@+id/care"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/app_care"
+                    android:textColor="@color/noselect" />
+
+                <RadioButton
+                    android:id="@+id/bady"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/app_bady"
+                    android:textColor="@color/noselect" />
+
+                <RadioButton
+                    android:id="@+id/more"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/app_more"
+                    android:textColor="@color/noselect" />
+            </RadioGroup>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/backcolor" />
+
+    <RelativeLayout
+        android:layout_marginTop="-525dp"
+        android:id="@+id/main_body"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </RelativeLayout>
+</LinearLayout>

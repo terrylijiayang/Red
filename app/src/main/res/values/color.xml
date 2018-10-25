@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+<color name="white">#FFFFFF</color><!--白色 -->
+<color name="black">#000000</color><!--黑色 -->
+
+
+<!--余 添加的-->
+<color name="red">#ff2742</color><!--红色-->
+<color name="dark_grey">#333333</color><!--深灰色(偏黑)-->
+<color name="medium_grey">#666666</color><!--中灰色 -->
+<color name="light_grey">#666666</color><!--浅灰色 -->
+<color name="lighter_grey">#999999</color><!--更浅灰色 -->
+<color name="lighter_blue">#f4f8fb</color><!--淡蓝色 -->
+
+<!--李-->
+    <color name="sky_blue">#489ede</color><!--天蓝色 -->
+
+
+
+    <!--lq-->
+    <!--<color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#2b2829</color>-->
+    <color name="titleColor">#756f6f</color >
+    <color name="backcolor">#efecec</color >
+    <color name="backco">#f2f1f1</color >
+    <color name="whitecolor">#ffffff</color >
+    <color name="redcolor">#fcf90505</color >
+    <color name="noselect">#ccc</color >
+    <color name="more">#a09e9e</color >
+    <color name="body">#72ccbbbb</color >
+</resources>

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ljy.red.PayActivity">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/back"
+
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/back"
+            android:contentDescription="" />
+
+        <ImageView
+            android:id="@+id/share"
+
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="320dp"
+            android:background="@drawable/share" />
+        " />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/地址"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/place"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView22"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textView22"
+            android:layout_marginTop="19dp"
+            android:text="王哈哈  15342567546"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:text="重庆市巴南区重庆理工大学花溪校区"
+            android:textSize="16sp"
+            android:layout_below="@+id/textView7"
+            android:layout_toRightOf="@+id/imageView3"
+            android:layout_toEndOf="@+id/imageView3"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/white_bg"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/地址"
+        android:layout_marginTop="17dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+
+            android:layout_marginLeft="46dp"
+            android:layout_marginStart="46dp"
+            app:srcCompat="@drawable/goods_small"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_above="@+id/imageView7"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/小红书福利社"
+                android:layout_alignBottom="@+id/小红书福利社"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp"
+                android:layout_toEndOf="@+id/imageView8"
+                android:layout_toRightOf="@+id/imageView8"
+                android:text="福利社" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                android:layout_marginLeft="47dp"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/red" />
+
+            <TextView
+                android:id="@+id/小红书福利社"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@+id/textView25"
+                android:layout_toRightOf="@+id/textView25"
+                android:text="小红书福利社"
+                android:textColor="#333" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="49dp"
+        android:layout_alignBottom="@+id/white_bg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView13"
+            android:layout_marginTop="14dp"
+            android:text="湿泡沫洗面奶"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="68dp"
+            android:layout_marginStart="68dp"
+            android:text="EltaMD氨基酸清洁保"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="税费¥14.45"
+            android:layout_alignBaseline="@+id/textView19"
+            android:layout_alignBottom="@+id/textView19"
+            android:layout_alignLeft="@+id/textView13"
+            android:layout_alignStart="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥129  "
+            android:textColor="#ff2742"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView17"
+            android:layout_marginTop="8dp"
+            android:text="207ml" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="65dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignLeft="@+id/goods"
+            android:layout_alignStart="@+id/goods"
+            android:background="@drawable/bt_shape_red"
+            android:text="限时特价"
+            android:textColor="#ffffff"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/payways"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:background="#ffffff"
+        android:layout_below="@+id/white_bg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="32dp"
+            android:text="支付方式"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/alipay"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView27"
+            android:layout_toEndOf="@+id/textView27" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/down"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/down"
+        android:layout_alignTop="@+id/payways"
+        android:layout_alignRight="@+id/detail"
+        android:layout_alignEnd="@+id/detail" />
+
+    <RelativeLayout
+        android:id="@+id/支付金额"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:layout_above="@+id/down"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp">
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:text="查看明细"
+            android:layout_alignBaseline="@+id/textView29"
+            android:layout_alignBottom="@+id/textView29"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView28"
+            android:layout_alignBottom="@+id/textView28"
+            android:layout_toEndOf="@+id/textView28"
+            android:layout_toRightOf="@+id/textView28"
+            android:text="（免运费）" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_toEndOf="@+id/textView26"
+            android:layout_toRightOf="@+id/textView26"
+            android:text="¥143.45"
+            android:textColor="#ff2742"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="30dp"
+            android:text="支付金额"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/red"
+        android:text="支付"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_toEndOf="@+id/relativeLayout2"
+        android:layout_toRightOf="@+id/relativeLayout2" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="36dp"
+            android:text="总计："
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:text="¥143.45"
+        android:textColor="#ff2742"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/button3"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_toLeftOf="@+id/detail"
+        android:layout_toStartOf="@+id/detail" />
+</RelativeLayout>
