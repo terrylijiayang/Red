@@ -128,8 +128,9 @@
         android:layout_height="30dp"
         android:layout_marginTop="125dp"
         android:layout_marginLeft="320dp"
-        android:background="@drawable/my_button"
-        android:drawableLeft="@drawable/install"/>
+        android:text="设置"
+        android:background="@drawable/edit_bg" />
+
     <Button
         android:layout_width="100dp"
         android:layout_height="30dp"
@@ -177,7 +178,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="笔记"
-        android:textColor="#333333"
+        android:textColor="#ff2843"
         android:layout_marginTop="250dp"
         android:layout_marginLeft="150dp"/>
     <TextView
@@ -188,21 +189,14 @@
         android:textColor="#333333"
         android:layout_marginTop="250dp"
         android:layout_marginLeft="220dp"/>
-   <TextView
-       android:id="@+id/tag"
-       android:layout_width="30dp"
-       android:layout_height="2dp"
-       android:background="@drawable/retangle"
-       android:layout_marginLeft="150dp"
-       android:layout_below="@id/notes"/>
         <!--发布内容-->
         <TableLayout
             android:id="@+id/content"
             android:layout_width="400dp"
-            android:layout_height="270dp"
+            android:layout_height="wrap_content"
             android:background="#f4f8fb"
             android:layout_marginTop="16dp"
-            android:layout_below="@+id/tag"
+            android:layout_below="@+id/notes"
             android:layout_centerHorizontal="true">
         </TableLayout>
 

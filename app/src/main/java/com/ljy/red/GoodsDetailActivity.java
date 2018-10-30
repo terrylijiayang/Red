@@ -13,13 +13,13 @@ public class GoodsDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_goods_detail);
 
-        Button btnAddCart= (Button) this.findViewById(R.id.button2);
-        Button btnSubmit= (Button) this.findViewById(R.id.button);
+        Button btnAddCart= (Button) this.findViewById(R.id.intoCart);
+        Button btnSubmit= (Button) this.findViewById(R.id.buy);
        //加入购物车
         btnAddCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(GoodsDetailActivity.this, ShopCartActivity.class);
+                Intent intent = new Intent(GoodsDetailActivity.this, IntroShopCartActivity.class);
                 startActivity(intent);
             }
         });

@@ -9,6 +9,10 @@
         android:layout_width="match_parent"
         android:orientation="horizontal"
         android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
         <RadioGroup
             android:id="@+id/rg"
             android:paddingRight="-5dp"
@@ -46,8 +50,7 @@
                 android:layout_weight="1"
                 android:button="@null"
                 android:gravity="center"
-                android:text="彩妆"
-                />
+                android:text="彩妆" />
 
             <RadioButton
                 android:id="@+id/mperson"
@@ -133,14 +136,15 @@
                 android:gravity="center"
                 android:text="家电数码" />
         </RadioGroup>
+        </LinearLayout>
     </LinearLayout>
 
     <RelativeLayout
         android:id="@+id/rtbody"
-        android:layout_width="295dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignLeft="@id/leftpag"
-        android:layout_marginLeft="-297dp"
+        android:layout_marginLeft="-245dp"
         android:layout_marginTop="15dp"
         >
     </RelativeLayout>

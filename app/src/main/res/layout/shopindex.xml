@@ -12,12 +12,14 @@
 
         <ImageView
             android:layout_width="45dp"
+            android:layout_weight="2"
             android:layout_height="45dp"
             android:layout_gravity="center"
             android:src="@drawable/other" />
 
         <SearchView
             android:id="@+id/sv_cus"
+            android:layout_weight="4"
             android:layout_width="340dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
@@ -113,7 +115,7 @@
         android:background="@color/backcolor" />
 
     <RelativeLayout
-        android:layout_marginTop="-525dp"
+        android:layout_marginTop="-445dp"
         android:id="@+id/main_body"
         android:background="@android:color/white"
         android:layout_width="match_parent"

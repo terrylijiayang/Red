@@ -7,12 +7,10 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.os.Bundle;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 
 import com.ljy.red.GoodsDetailActivity;
 import com.ljy.red.R;
-import com.ljy.red.WelfareHomeActivity;
-import com.ljy.red.mresActivity;
+import com.ljy.red.WelfareMainActivity;
 
 
 public class recFragment extends Fragment  {
@@ -27,7 +25,7 @@ public class recFragment extends Fragment  {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), WelfareHomeActivity.class);
+                Intent intent = new Intent(getActivity(), WelfareMainActivity.class);
                 startActivity(intent);
             }
         });

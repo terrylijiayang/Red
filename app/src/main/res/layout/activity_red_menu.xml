@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ljy.red.RedMenuActivity"
+    android:background="#cf2727">
+<LinearLayout
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="200dp"
+    android:layout_marginLeft="100dp"
+    android:layout_marginRight="100dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="小红书"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textSize="44dp"
+        android:fontFamily="@string/app_Percare"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:text="标 记 我 的 生 活"/>
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="52dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true">
+<Button
+    android:id="@+id/login"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edit_bg"
+    android:layout_marginLeft="10dp"
+    android:text="登录"/>
+        <Button
+            android:layout_toRightOf="@+id/login"
+            android:id="@+id/regist"
+            android:layout_marginLeft="50dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_bg"
+            android:text="注册"/>
+    </RelativeLayout>
+</RelativeLayout>

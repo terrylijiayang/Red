@@ -1,6 +1,7 @@
 package com.ljy.red.fragment;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -21,7 +22,7 @@ public class MeFrament extends Fragment implements View.OnClickListener{
 
     private MeCollectionFragment meCollectionFragment= new MeCollectionFragment();
     private MeNotesFragement meNotesFragement= new MeNotesFragement();
-
+    private TextView txtNote,txtCollection;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -31,15 +32,17 @@ public class MeFrament extends Fragment implements View.OnClickListener{
     }
     //初始化
     public void init(View view){
-        TextView txtNote= (TextView) view.findViewById(R.id.notes);
-        TextView txtCollection= (TextView) view.findViewById(R.id.collection);
+         txtNote= (TextView) view.findViewById(R.id.notes);
+         txtCollection= (TextView) view.findViewById(R.id.collection);
         Button btnEdit= (Button) view.findViewById(R.id.edit_info);
+        Button btnInstall= (Button) view.findViewById(R.id.install);
         getChildFragmentManager().beginTransaction()
                 .replace(R.id.content,meNotesFragement)
                 .commit();
         txtNote.setOnClickListener(this);
         txtCollection.setOnClickListener(this);
         btnEdit.setOnClickListener(this);
+        btnInstall.setOnClickListener(this);
     }
 
     @Override
@@ -49,17 +52,25 @@ public class MeFrament extends Fragment implements View.OnClickListener{
                 Intent intent = new Intent(getActivity(),MeActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.install:
+                Intent intent1 = new Intent(getActivity(),MeActivity.class);
+                startActivity(intent1);
+                break;
             case R.id.collection:
                 this.getChildFragmentManager()
                         .beginTransaction()
                         .replace(R.id.content,meCollectionFragment)
                         .commit();
+                txtCollection.setTextColor(Color.parseColor("#ff2843"));
+                txtNote.setTextColor(Color.parseColor("#333333"));
                 break;
             case R.id.notes:
                 this.getChildFragmentManager()
                         .beginTransaction()
                         .replace(R.id.content,meNotesFragement)
                         .commit();
+                txtCollection.setTextColor(Color.parseColor("#333333"));
+                txtNote.setTextColor(Color.parseColor("#ff2843"));
                 break;
         }
     }

@@ -147,6 +147,7 @@ public class ShopFragment extends Fragment implements View.OnClickListener {
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), mresActivity.class);
                 startActivity(intent);
+                getActivity().finish();
             }
         });
     }

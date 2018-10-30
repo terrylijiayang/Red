@@ -12,7 +12,7 @@ public class PayActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay);
-        Button btnPay= (Button) this.findViewById(R.id.button3);
+        Button btnPay= (Button) this.findViewById(R.id.finalpay);
         //完成付款
         btnPay.setOnClickListener(new View.OnClickListener() {
             @Override

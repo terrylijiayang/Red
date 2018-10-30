@@ -8,7 +8,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp">
         <ImageView
             android:layout_width="0dp"
             android:layout_weight="0.20"
@@ -47,20 +48,26 @@
             android:orientation="horizontal"
          >
             <!--   android:background="@drawable/shap_message_linear"-->
-            <ImageView
-                android:layout_width="0dp"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginTop="6dp"
-                android:layout_marginBottom="6dp"
-                android:layout_marginLeft="6dp"
-                android:background="@drawable/u11"/>
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/u11"/>
+            </LinearLayout>
+
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="9dp"
                 android:layout_weight="8"
-                android:textSize="20dp"
+                android:textSize="16dp"
                 android:layout_gravity="center"
                 android:text="获赞和收藏"
                 />
@@ -80,20 +87,26 @@
             android:orientation="horizontal"
          >
             <!--   android:background="@drawable/shape_border"-->
-            <ImageView
-                android:layout_width="0dp"
+
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_marginTop="6dp"
                 android:layout_marginBottom="6dp"
                 android:layout_marginLeft="6dp"
                 android:background="@drawable/u12"/>
+                </LinearLayout>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="9dp"
                 android:layout_weight="8"
-                android:textSize="20dp"
+                android:textSize="16dp"
                 android:layout_gravity="center"
                 android:text="评论和@"
                 />
@@ -112,20 +125,25 @@
             android:layout_height="60dp"
             android:orientation="horizontal"
          >
-            <ImageView
-                android:layout_width="0dp"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_marginTop="6dp"
                 android:layout_marginBottom="6dp"
                 android:layout_marginLeft="6dp"
                 android:background="@drawable/u10"/>
+                </LinearLayout>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="9dp"
                 android:layout_weight="8"
-                android:textSize="20dp"
+                android:textSize="16dp"
                 android:layout_gravity="center"
                 android:text="关注"
                 />
@@ -146,15 +164,20 @@
             android:background="@color/white"
             android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="0dp"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="6dp"
                 android:layout_marginLeft="6dp"
                 android:layout_marginTop="6dp"
-                android:layout_weight="1"
                 android:background="@drawable/u13" />
+                </LinearLayout>
 
             <TextView
                 android:layout_width="0dp"
@@ -163,7 +186,7 @@
                 android:layout_marginLeft="9dp"
                 android:layout_weight="8"
                 android:text="消息通知"
-                android:textSize="20dp" />
+                android:textSize="16dp" />
 
             <ImageView
                 android:layout_width="0dp"
@@ -189,20 +212,25 @@
         android:layout_height="60dp"
         android:orientation="horizontal"
         android:background="@color/white">
-        <ImageView
-            android:layout_width="0dp"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginTop="6dp"
             android:layout_marginBottom="6dp"
             android:layout_marginLeft="6dp"
             android:background="@drawable/u12"/>
+            </LinearLayout>
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="9dp"
             android:layout_weight="8"
-            android:textSize="20dp"
+            android:textSize="16dp"
             android:layout_gravity="center"
             android:text="私信"
             />

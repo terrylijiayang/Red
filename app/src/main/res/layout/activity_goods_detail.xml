@@ -4,280 +4,648 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context="com.ljy.red.GoodsDetailActivity">
+
+    <!--top顶部icon-->
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/goods_top"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="3dp">
-
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
         <ImageView
             android:id="@+id/back"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_marginLeft="20dp"
-            android:background="@drawable/back" />
-
+            android:background="@drawable/zhy_back" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></LinearLayout>
         <ImageView
             android:id="@+id/share"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_marginLeft="320dp"
-            android:background="@drawable/share" />
+            android:layout_marginRight="20dp"
+            android:background="@drawable/zhy_share" />
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/goods"
-        android:layout_width="350dp"
-        android:layout_height="350dp"
-        android:layout_below="@+id/linearLayout"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/eltamd" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="65dp"
-        android:layout_height="20dp"
-        android:layout_alignBottom="@+id/textView5"
-        android:layout_alignLeft="@+id/goods"
-        android:layout_alignStart="@+id/goods"
-        android:background="@drawable/bt_shape_red"
-        android:text="限时特价"
-        android:textColor="#ffffff"
-        android:visibility="visible" />
-
-    <TextView
-        android:id="@+id/textView5"
+    <ScrollView
+        android:id="@+id/goods_scroll"
+        android:layout_below="@+id/goods_top"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/goods"
-        android:layout_marginLeft="120dp"
-        android:layout_marginTop="12dp"
-        android:text="¥129  "
-        android:textSize="18sp" />
+        android:layout_above="@+id/goods_bottom"
+        >
+        <LinearLayout
+            android:id="@+id/goods_scroll_all"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/component_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView5"
-        android:layout_alignBottom="@+id/linearLayout5"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="20dp"
-        android:text="¥202 6.4折 "
-        tools:ignore="NotSibling,UnknownId" />
+            <!--商品图片-->
+            <LinearLayout
+                android:id="@+id/goods_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/goods_pic"
+                    android:layout_below="@+id/goods_top"
+                    android:layout_width="350dp"
+                    android:layout_height="350dp"
+                    android:background="@drawable/zhy_eltamd" />
+            </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/component_number"
-        android:layout_alignBottom="@+id/component_number"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="21dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginRight="21dp"
-        android:text="跨境税¥14.15" />
+            <!--原价/促销价等价格信息-->
+            <LinearLayout
+                android:id="@+id/goods_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--限时特价button-->
+                <Button
+                    android:id="@+id/goods_bargin"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/zhy_bt_shape_red"
+                    android:text="限时特价"
+                    android:textColor="#ffffff"
+                    android:visibility="visible" />
+                <!--129元-->
+                <LinearLayout
+                    android:id="@+id/bargin_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:text="¥129  "
+                        android:textColor="@color/red"
+                        android:textSize="24sp" />
+                </LinearLayout>
+                <!--原价 打折力度-->
+                <LinearLayout
+                    android:id="@+id/bargin_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/component_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥202 6.4折 "
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <!--包邮-->
+                <LinearLayout
+                    android:id="@+id/bargin_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="30dp"
-        android:layout_height="17dp"
-        android:background="@drawable/bt_shape_white"
-        android:text="包邮"
-        android:gravity="center"
-        android:textColor="#ff2742"
-        android:layout_alignBaseline="@+id/button4"
-        android:layout_alignBottom="@+id/button4"
-        android:layout_toRightOf="@+id/component_number"
-        android:layout_toEndOf="@+id/component_number" />
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="30dp"
+                        android:layout_height="17dp"
+                        android:background="@drawable/zhy_bt_shape_white"
+                        android:gravity="center"
+                        android:text="包邮"
+                        android:textColor="#ff2742" />
+                </LinearLayout>
+                <!--跨境税-->
+                <LinearLayout
+                    android:id="@+id/bargin_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="跨境税¥14.15" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--会员优惠信息-->
+            <RelativeLayout
+                android:id="@+id/goods_vip_prices"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dp"
+                android:background="#f2f2f2">
+                <!--小红书icon-->
+                <ImageView
+                    android:id="@+id/red_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    app:srcCompat="@drawable/zhy_red"
+                    />
+                <TextView
+                    android:id="@+id/vip_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小红书会员专享价¥125"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_alignTop="@+id/red_icon"
+                    android:layout_toRightOf="@+id/red_icon"
+                    android:layout_toEndOf="@+id/red_icon" />
+                <!--会员开卡价格-->
+                <TextView
+                    android:id="@+id/vip_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开卡仅¥19.9，此商品省¥18.45"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignLeft="@+id/red_icon"
+                    android:layout_alignStart="@+id/red_icon" />
+                <!-- 开通会员-->
+                <TextView
+                    android:id="@+id/vip_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开通会员>"
+                    android:textColor="#ff2742"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <!--自营-->
+            <LinearLayout
+                android:id="@+id/self_sell"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/self_text1"
+                    android:layout_width="32dp"
+                    android:layout_height="17dp"
+                    android:gravity="center"
+                    android:textColor="#ff2742"
+                    android:text="自营"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/zhy_bt_shape_white"
+                    />
+                <TextView
+                    android:id="@+id/self_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginStart="14dp"
+                    android:text="洗进眼睛也不疼，氨基酸清洁保湿泡"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <!--产品说明-->
+            <LinearLayout
+                android:id="@+id/good_detail2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/self_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:text="沫洗面奶 207ml"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+            <!--来自美国的EltaMD-->
+            <LinearLayout
+                android:id="@+id/goods_stem"
+                android:orientation="horizontal"
+                android:layout_below="@+id/good_detail2"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/stem_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="来自美国的"
+                    />
+                <TextView
+                    android:id="@+id/stem_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#23b6ec"
+                    android:text="EletMD"
+                    />
+            </LinearLayout>
+            <!--假一赔十，七天保价-->
+            <LinearLayout
+                android:id="@+id/goods_promise"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!-- 假一赔十-->
+                <LinearLayout
+                    android:id="@+id/promise1"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/promise1_image1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/zhy_gou"/>
+                    <TextView
+                        android:id="@+id/promise1_text1"
+                        android:text="假一赔十"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <!--  七天保价-->
+                <LinearLayout
+                    android:id="@+id/promise1"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/promise1_image1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/zhy_gou"/>
+                    <TextView
+                        android:id="@+id/promise1_text1"
+                        android:text="假一赔十"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--保税仓发货-->
+            <LinearLayout
+                android:id="@+id/goods_promise_detail"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/promise_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="保税仓发货·单件包邮·包税·七天无理由退货"/>
+            </LinearLayout>
+            <!--已选数量、规格-->
+            <LinearLayout
+                android:id="@+id/goods_number_volume"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/number_volume1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已选："/>
+                <TextView
+                    android:id="@+id/number_volume2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="x1 207ml"/>
+            </LinearLayout>
 
-    <RelativeLayout
-        android:id="@+id/blue_bg"
-        android:layout_width="400dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="14dp"
-        android:background="#f2f2f2"
-        android:layout_below="@+id/button4"
-        android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView"
-        android:layout_alignLeft="@+id/button4"
-        android:layout_alignStart="@+id/button4">
+            <!--分割线1-->
+            <LinearLayout
+                android:id="@+id/line_one"
+                android:layout_width="350dp"
+                android:background="@color/light_grey"
+                android:layout_below="@id/goods_number_volume"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_height="0.5dp"
+                />
+            <!--商品评价-->
+            <LinearLayout
+                android:id="@+id/goods_comment"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/comment_detail"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:text=" 美妆达人小蛮力荐的一款氨基酸洗面奶，  很多红薯认识这个品牌，也都是从这一瓶洁面开始的。“能够卸除淡妆和防晒霜的洗面奶，淡淡的青瓜香味超级喜欢”，“按压出来是乳液质地，神奇的是湿手湿脸搓一搓再用，  就会有绵密的泡沫”，“泡沫是像奶油那么绵密的，在脸上会越揉越多，软软的敷在脸.上，  竟然觉得有点好玩~然而，这么多的泡沫，水- -冲就干净了，完全没有残留的感觉”，“洗完不假滑不紧绷”~有红薯为了测试它是不是真的不刺激，还特意洗进眼睛里，“居然一点感觉也没有!”(队长提示，千万别模仿哦~目前多版本混发，不影响红薯使用哦! )小红薯们注意，目前新老版本混发，不影响使用哦~
+"
+                    />
 
-        <ImageView
-            android:id="@+id/red"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/red"
-            android:layout_alignBottom="@+id/textView11"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            </LinearLayout>
+            <!--分割线2-->
+            <LinearLayout
+                android:id="@+id/line_two"
+                android:layout_width="350dp"
+                android:background="@color/light_grey"
+                android:layout_below="@id/comment_detail"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="0.5dp"
+                />
+            <!--小红书福利社-->
+            <LinearLayout
+                android:id="@+id/user_comment"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content">
+                <!-- 福利社icon-->
+                <LinearLayout
+                    android:id="@+id/comment_image"
+                    android:orientation="vertical"
+                    android:layout_width="50dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/zhy_fulishe_icon"
+                        />
+                </LinearLayout>
+                <!--福利社文字-->
+                <LinearLayout
+                    android:id="@+id/comment_text"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/comment_text_layout1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/comment_text1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="小红书福利社"
+                            android:textSize="16sp"/>
+                        <TextView
+                            android:id="@+id/comment_text2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/lighter_grey"
+                            android:text="全球直采，100%正品保障"/>
+                    </LinearLayout>
 
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="开卡仅¥19.9，此商品省¥18.45"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
 
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="小红书会员专享价¥125"
-            android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/red"
-            android:layout_toEndOf="@+id/red" />
-    </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/information"
-        android:layout_width="80dp"
-        android:layout_height="50dp"
+                </LinearLayout>
+            </LinearLayout>
+            <!-- &lt;!&ndash;分割线2&ndash;&gt;
+             <LinearLayout
+                 android:id="@+id/line_two"
+                 android:layout_width="350dp"
+                 android:background="@color/light_grey"
+                 android:layout_below="@id/comment_text"
+                 android:layout_gravity="center"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="15dp"
+                 android:layout_height="0.5dp"
+                 />-->
+            <!-- 其他销售此商品的商家-->
+            <LinearLayout
+                android:id="@+id/goods_other_shop"
+                android:orientation="horizontal"
+                android:layout_width="350dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_marginLeft="30dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/other_shop_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="其他销售此商品的卖家"/>
+
+                <LinearLayout
+                    android:id="@+id/white2"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/other_shop_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="#ffffff"
+                        android:gravity="right"
+                        android:textColor="@color/red"
+                        android:text="¥158 >" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 其他用户还看过-->
+            <LinearLayout
+                android:id="@+id/other_foot"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content">
+
+                <!--   其他用户看过的东西1-->
+                <LinearLayout
+                    android:id="@+id/other_foot1"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:background="@drawable/zhy_other_foot1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12sp"
+                        android:text="freeplus芙丽芳丝 净润洗面乳洗面奶"/>
+
+                </LinearLayout>
+
+                <!--   其他用户看过的东西2-->
+                <LinearLayout
+                    android:id="@+id/other_foot2"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:background="@drawable/zhy_other_foot2" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12sp"
+                        android:text="curel珂润 药用浸润泡沫洁面 150ml"/>
+                </LinearLayout>
+                <!--   其他用户看过的东西3-->
+                <LinearLayout
+                    android:id="@+id/other_foot3"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:background="@drawable/zhy_other_foot3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12sp"
+                        android:text="Dr.Ci:Labo城野医生毛孔收敛化妆水"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!-- 底部留白-->
+            <LinearLayout
+                android:id="@+id/white3"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <!-- 底部-->
+    <LinearLayout
+        android:id="@+id/goods_bottom"
+        android:layout_width="match_parent"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-
-        <TextView
-            android:id="@+id/store"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="4dp"
-            android:text="店铺"
-            android:textSize="12sp"
-            tools:ignore="DuplicateIds" />
-
-        <ImageView
-            android:id="@+id/store"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="5dp"
-            app:srcCompat="@drawable/store"
-            tools:ignore="DuplicateIds" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout3"
-        android:layout_width="80dp"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/information"
-        android:layout_toRightOf="@+id/information">
-
-        <ImageView
-            android:id="@+id/shoppingcart"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="5dp"
-            app:srcCompat="@drawable/shoppingcart" />
-
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="3dp"
-            android:text="购物车"
-            android:textSize="12sp" />
-    </RelativeLayout>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="110dp"
-        android:layout_height="50dp"
-        android:background="@color/red"
-        android:onClick="into_shoppingcart"
-        android:text="立即购买"
-        android:textColor="#ffffff"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_toRightOf="@+id/button2"
-        android:layout_toEndOf="@+id/button2" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="140dp"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/relativeLayout3"
-        android:layout_toRightOf="@+id/relativeLayout3"
-        android:background="#FE7E8D"
-        android:text="加入购物车"
-        android:textColor="#ffffff"
-        tools:ignore="HardcodedText" />
-
-    <RelativeLayout
-        android:layout_width="400dp"
-        android:layout_height="50dp"
-        android:layout_alignEnd="@+id/blue_bg"
-        android:layout_alignLeft="@+id/blue_bg"
-        android:layout_alignRight="@+id/blue_bg"
-        android:layout_alignStart="@+id/blue_bg"
-        android:layout_below="@+id/blue_bg"
-        android:id="@+id/relativeLayout4">
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="32dp"
-            android:layout_height="17dp"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <!--店铺icon-->
+        <LinearLayout
+            android:id="@+id/goods_shop"
+            android:orientation="vertical"
             android:gravity="center"
-            android:text="自营"
-            android:textColor="#ff2742"
-            android:background="@drawable/bt_shape_white"
-            android:layout_above="@+id/textView16"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/store"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:srcCompat="@drawable/zhy_store" />
+            <TextView
+                android:id="@+id/store"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="店铺"
+                />
+            s
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/textView16"
+        <!--购物车icon-->
+        <LinearLayout
+            android:id="@+id/goods_shoppingcar"
+            android:orientation="vertical"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="40dp"
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/shoppingcart"
+                android:layout_gravity="center"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:srcCompat="@drawable/zhy_shoppingcart" />
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购物车" />
+        </LinearLayout>
+
+        <!--加入购物车-->
+        <LinearLayout
+            android:id="@+id/goods_into_shoppingcar"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView3"
-            android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/textView3"
-            android:text="沫洗面奶 207ml"
-            android:textSize="16sp" />
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/intoCart"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:background="#FE7E8D"
+                android:text="加入购物车"
+                android:textColor="#ffffff"
+                tools:ignore="HardcodedText" />
 
-        <TextView
-            android:id="@+id/textView15"
+        </LinearLayout>
+
+        <!--立即购买-->
+        <LinearLayout
+            android:id="@+id/goods_buy"
+            android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="14dp"
-            android:layout_marginStart="14dp"
-            android:layout_toEndOf="@+id/textView3"
-            android:layout_toRightOf="@+id/textView3"
-            android:text="洗进眼睛也不疼，氨基酸清洁保湿泡"
-            android:textSize="16sp" />
-    </RelativeLayout>
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/buy"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:background="@color/red"
+                android:onClick="into_shoppingcart"
+                android:text="立即购买"
+                android:textColor="#ffffff"
+                />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="开通会员>"
-        android:textColor="#ff2742"
-        android:textSize="12sp"
-        android:layout_alignTop="@+id/blue_bg"
-        android:layout_alignRight="@+id/textView9"
-        android:layout_alignEnd="@+id/textView9" />
+        </LinearLayout>
+
+    </LinearLayout>
 </RelativeLayout>

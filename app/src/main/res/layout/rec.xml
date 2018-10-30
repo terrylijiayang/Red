@@ -61,6 +61,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true">
             <LinearLayout
+                android:layout_weight="1"
                 android:layout_width="190dp"
                 android:layout_height="155dp"
                 android:background="@color/whitecolor"
@@ -75,6 +76,7 @@
                     android:background="@drawable/index4" />
             </LinearLayout>
             <LinearLayout
+                android:layout_weight="1"
                 android:layout_width="190dp"
                 android:layout_height="155dp"
                 android:background="@color/whitecolor"
@@ -98,6 +100,7 @@
         <LinearLayout
             android:layout_width="190dp"
             android:layout_height="155dp"
+            android:layout_weight="1"
             android:background="@color/whitecolor"
             android:layout_marginLeft="8dp"
             android:orientation="vertical">
@@ -110,6 +113,7 @@
                 android:background="@drawable/index7" />
         </LinearLayout>
         <LinearLayout
+            android:layout_weight="1"
             android:layout_width="190dp"
             android:layout_height="155dp"
             android:background="@color/whitecolor"
@@ -135,6 +139,7 @@
             android:id="@+id/shop_item1"
             android:layout_width="190dp"
             android:layout_height="290dp"
+            android:layout_weight="1"
             android:background="@color/whitecolor"
             android:layout_marginLeft="8dp"
             android:orientation="vertical">
@@ -150,7 +155,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="中国·不伤肤快速去黑头"
+                android:text="新加坡·信封包经典回归"
                 android:textStyle="bold" />
 
             <TextView
@@ -160,7 +165,7 @@
                 android:width="150dp"
                 android:lines="2"
                 android:maxLines="11"
-                android:text="肌肤之食 矿物脸部防满切闭口粉刺清洁控油不···" />
+                android:text="自然堂雪域洗面奶水乳护肤品套装正品补水..." />
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
@@ -206,6 +211,7 @@
             android:layout_height="290dp"
             android:background="@color/whitecolor"
             android:layout_marginLeft="8dp"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <ImageView
@@ -219,7 +225,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="中国·不伤肤快速去黑头"
+                android:text="中国·百雀羚草本"
                 android:textStyle="bold" />
 
             <TextView
@@ -283,6 +289,7 @@
             <LinearLayout
                 android:layout_width="190dp"
                 android:layout_height="290dp"
+                android:layout_weight="1"
                 android:background="@color/whitecolor"
                 android:layout_marginLeft="8dp"
                 android:orientation="vertical">
@@ -298,7 +305,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="中国·不伤肤快速去黑头"
+                    android:text="中国·女神必备精品"
                     android:textStyle="bold" />
 
                 <TextView
@@ -308,7 +315,7 @@
                     android:width="150dp"
                     android:lines="2"
                     android:maxLines="11"
-                    android:text="肌肤之食 矿物脸部防满切闭口粉刺清洁控油不···" />
+                    android:text="【双十一预售】欧莱雅复颜抗皱紧致护肤品套装女补水···" />
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
@@ -354,6 +361,7 @@
                 android:layout_height="290dp"
                 android:background="@color/whitecolor"
                 android:layout_marginLeft="8dp"
+                android:layout_weight="1"
                 android:orientation="vertical">
 
                 <ImageView
@@ -367,7 +375,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="中国·不伤肤快速去黑头"
+                    android:text="中国·轻奢别致西斜"
                     android:textStyle="bold" />
 
                 <TextView
@@ -377,7 +385,7 @@
                     android:width="150dp"
                     android:lines="2"
                     android:maxLines="11"
-                    android:text="肌肤之食 矿物脸部防满切闭口粉刺清洁控油不···" />
+                    android:text="Kans/韩束墨菊巨补水护肤化妆品套装女保湿···" />
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
@@ -416,10 +424,6 @@
                         android:layout_height="25dp" />
                 </LinearLayout>
             </LinearLayout>
-
         </LinearLayout>
-
-
-
     </LinearLayout>
 </ScrollView>
