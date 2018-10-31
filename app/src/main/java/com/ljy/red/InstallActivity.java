@@ -22,8 +22,8 @@ public class InstallActivity extends AppCompatActivity {
     }
     ImageView.OnClickListener listener_back = new ImageView.OnClickListener(){
         public void onClick(View v) {
-            Intent intent = new Intent(InstallActivity.this, MeFrament.class);
-            startActivity(intent);
+            /*Intent intent = new Intent(InstallActivity.this, MeFrament.class);
+            startActivity(intent);*/
             InstallActivity.this.finish();
         }
     };

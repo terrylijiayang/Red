@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--button背景色-->
+    <solid android:color="#ffffff"/>
+    <!--边框颜色和色彩-->
+    <stroke
+        android:color="@color/littred"
+        android:width="1dp"/>
+    <!--设置圆角（只用于形状是矩形）-->
+    <corners
+        android:radius="3dp"/>
+</shape>

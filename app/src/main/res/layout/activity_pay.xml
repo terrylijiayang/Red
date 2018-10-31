@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F4F8FB"
     tools:context="com.ljy.red.PayActivity">
     <!--top顶部icon-->
     <LinearLayout
@@ -317,7 +318,7 @@
         <!--支付按钮-->
         <LinearLayout
             android:id="@+id/bottom_button"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <Button
                 android:id="@+id/finalpay"

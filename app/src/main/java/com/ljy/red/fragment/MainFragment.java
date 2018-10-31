@@ -21,11 +21,8 @@ import com.ljy.red.R;
 public class MainFragment extends Fragment {
 
     private TabLayout tabLayout = null;
-
     private ViewPager viewPager;
-
     private Fragment[] mFragmentArrays = new Fragment[3];
-
     private String[] mTabTitles = new String[3];
 
     @Nullable

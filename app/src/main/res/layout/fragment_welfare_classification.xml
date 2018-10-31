@@ -11,7 +11,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
+            <!--<LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:orientation="vertical">
@@ -24,31 +24,31 @@
                     <Button
                         android:layout_width="80dp"
                         android:layout_height="50dp"
-                        android:text="护肤"
-                        android:background="@android:color/holo_blue_light"/>
+                        android:background="@android:color/holo_blue_light"
+                        android:text="护肤" />
 
                     <Button
                         android:id="@+id/button"
                         android:layout_width="80dp"
                         android:layout_height="50dp"
-                        android:text="彩妆"
-                        android:layout_marginLeft="10dp"
-                        android:background="@android:color/holo_blue_light"/>
-
-                    <Button
-                        android:layout_width="80dp"
-                        android:layout_height="50dp"
-                        android:text="个护"
-                        android:layout_marginLeft="10dp"
-
-                        android:background="@android:color/holo_blue_light"/>
-
-                    <Button
-                        android:layout_width="80dp"
-                        android:layout_height="50dp"
-                        android:text="保健"
                         android:layout_marginLeft="10dp"
                         android:background="@android:color/holo_blue_light"
+                        android:text="彩妆" />
+
+                    <Button
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@android:color/holo_blue_light"
+
+                        android:text="个护" />
+
+                    <Button
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@android:color/holo_blue_light"
+                        android:text="保健"
 
                         />
 
@@ -57,8 +57,7 @@
                         android:layout_width="48dp"
                         android:layout_height="50dp"
                         android:layout_marginLeft="10dp"
-                        android:background="@android:color/holo_blue_light"
-                       ></ImageButton>
+                        android:background="@android:color/holo_blue_light"></ImageButton>
                 </LinearLayout>
 
                 <LinearLayout
@@ -69,24 +68,24 @@
                     <Button
                         android:layout_width="80dp"
                         android:layout_height="50dp"
-                        android:text="美食"
-                        android:background="@android:color/holo_blue_light"/>
+                        android:background="@android:color/holo_blue_light"
+                        android:text="美食" />
 
                     <Button
                         android:layout_width="80dp"
                         android:layout_height="50dp"
-                        android:text="家清"
                         android:layout_marginLeft="10dp"
-                        android:background="@android:color/holo_blue_light"/>
+                        android:background="@android:color/holo_blue_light"
+                        android:text="家清" />
 
                     <Button
                         android:layout_width="80dp"
                         android:layout_height="50dp"
-                        android:text="母婴"
                         android:layout_marginLeft="10dp"
-                        android:background="@android:color/holo_blue_light"/>
+                        android:background="@android:color/holo_blue_light"
+                        android:text="母婴" />
                 </LinearLayout>
-            </LinearLayout>
+            </LinearLayout>-->
 
 
             <LinearLayout
@@ -104,6 +103,7 @@
                         android:layout_height="80dp"
                         android:gravity="center"
                         android:text="护肤"
+                        android:textColor="@color/colorAccent"
                         android:textSize="40sp" />
                 </LinearLayout>
 
@@ -124,76 +124,80 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView8"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/commodity1" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="面膜" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView14"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/emollient" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="化妆水" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView15"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/cleanface" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="清面" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView16"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/xiezhuang" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="卸妆" />
@@ -206,33 +210,33 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/cream" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="精华" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/sunscreen" />
 
@@ -244,14 +248,14 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/creamsunscreen" />
 
@@ -263,19 +267,19 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/eyekinpro" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="眼部护肤" />
@@ -297,6 +301,7 @@
                         android:layout_height="80dp"
                         android:gravity="center"
                         android:text="彩妆"
+                        android:textColor="@color/colorAccent"
                         android:textSize="40sp" />
                 </LinearLayout>
 
@@ -317,76 +322,80 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView8"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/commodity1" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="面膜" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView14"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/emollient" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="化妆水" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView15"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/cleanface" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="清面" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView16"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/xiezhuang" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="卸妆" />
@@ -399,33 +408,33 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/cream" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="精华" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/sunscreen" />
 
@@ -437,14 +446,14 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/creamsunscreen" />
 
@@ -456,19 +465,19 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/eyekinpro" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="眼部护肤" />
@@ -486,11 +495,13 @@
                     android:layout_height="80dp">
 
                     <TextView
+                        android:id="@+id/textView8"
                         android:layout_width="match_parent"
                         android:layout_height="80dp"
                         android:gravity="center"
-                        android:textSize="40sp"
-                        android:text="个护" />
+                        android:text="个护"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="40sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -510,76 +521,80 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView8"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/commodity1" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="面膜" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView14"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/emollient" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="化妆水" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView15"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/cleanface" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="清面" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView16"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/xiezhuang" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="卸妆" />
@@ -592,33 +607,33 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/cream" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="精华" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/sunscreen" />
 
@@ -630,14 +645,14 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/creamsunscreen" />
 
@@ -649,19 +664,19 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/eyekinpro" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="眼部护肤" />
@@ -683,7 +698,8 @@
                         android:layout_height="80dp"
                         android:gravity="center"
                         android:text="保健"
-                        android:textSize="40sp"/>
+                        android:textColor="@color/colorAccent"
+                        android:textSize="40sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -703,76 +719,80 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView8"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/commodity1" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="面膜" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView14"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/emollient" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="化妆水" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView15"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/cleanface" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="清面" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView16"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/xiezhuang" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="卸妆" />
@@ -785,33 +805,33 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/cream" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="精华" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/sunscreen" />
 
@@ -823,14 +843,14 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/creamsunscreen" />
 
@@ -842,19 +862,19 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/eyekinpro" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="眼部护肤" />
@@ -872,11 +892,13 @@
                     android:layout_height="80dp">
 
                     <TextView
+                        android:id="@+id/textView11"
                         android:layout_width="match_parent"
                         android:layout_height="80dp"
                         android:gravity="center"
                         android:text="美食"
-                        android:textSize="40sp"/>
+                        android:textColor="@color/colorAccent"
+                        android:textSize="40sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -896,76 +918,80 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView8"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/commodity1" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="面膜" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView14"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/emollient" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="化妆水" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView15"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/cleanface" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="清面" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView16"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/xiezhuang" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="卸妆" />
@@ -978,33 +1004,33 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/cream" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="精华" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/sunscreen" />
 
@@ -1016,14 +1042,14 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/creamsunscreen" />
 
@@ -1035,19 +1061,19 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/eyekinpro" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="眼部护肤" />
@@ -1069,9 +1095,9 @@
                         android:layout_height="78dp"
                         android:gravity="center"
                         android:text="家清"
-                        android:textSize="40sp"/>
+                        android:textColor="@color/colorAccent"
+                        android:textSize="40sp" />
                 </LinearLayout>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="40dp">
@@ -1089,76 +1115,80 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView8"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/commodity1" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="面膜" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView14"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/emollient" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="化妆水" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView15"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/cleanface" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="清面" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView16"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/xiezhuang" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="卸妆" />
@@ -1171,33 +1201,33 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/cream" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="精华" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/sunscreen" />
 
@@ -1209,14 +1239,14 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/creamsunscreen" />
 
@@ -1228,19 +1258,19 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/eyekinpro" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="眼部护肤" />
@@ -1262,7 +1292,8 @@
                         android:layout_height="80dp"
                         android:gravity="center"
                         android:text="母婴"
-                        android:textSize="40sp"/>
+                        android:textColor="@color/colorAccent"
+                        android:textSize="40sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -1282,76 +1313,80 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView8"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/commodity1" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="面膜" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView14"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/emollient" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="化妆水" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView15"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/cleanface" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="清面" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:id="@+id/imageView16"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/xiezhuang" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="卸妆" />
@@ -1364,33 +1399,33 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/cream" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="精华" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/sunscreen" />
 
@@ -1402,14 +1437,14 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/creamsunscreen" />
 
@@ -1421,212 +1456,19 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_width="69dp"
+                            android:layout_height="59dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/eyekinpro" />
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="15dp"
-                            android:gravity="center"
-                            android:text="眼部护肤" />
-                    </LinearLayout>
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="500dp"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="80dp">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="80dp"
-                        android:gravity="center"
-                        android:text="护肤"
-                        android:textSize="40sp"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:gravity="left"
-                        android:text="热门品类" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="80dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/commodity1" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="15dp"
-                            android:gravity="center"
-                            android:text="面膜" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="80dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/emollient" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="15dp"
-                            android:gravity="center"
-                            android:text="化妆水" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="80dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/cleanface" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="15dp"
-                            android:gravity="center"
-                            android:text="清面" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="80dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/xiezhuang" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="15dp"
-                            android:gravity="center"
-                            android:text="卸妆" />
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="80dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/cream" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="15dp"
-                            android:gravity="center"
-                            android:text="精华" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="80dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/sunscreen" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="15dp"
-                            android:gravity="center"
-                            android:text="防晒" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="80dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/creamsunscreen" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="15dp"
-                            android:gravity="center"
-                            android:text="乳防晒霜" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="80dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/eyekinpro" />
-
-                        <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="69dp"
                             android:layout_height="15dp"
                             android:gravity="center"
                             android:text="眼部护肤" />

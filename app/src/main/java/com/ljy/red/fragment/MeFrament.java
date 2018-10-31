@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.ljy.red.InstallActivity;
 import com.ljy.red.MeActivity;
 import com.ljy.red.R;
 
@@ -37,7 +38,7 @@ public class MeFrament extends Fragment implements View.OnClickListener{
         Button btnEdit= (Button) view.findViewById(R.id.edit_info);
         Button btnInstall= (Button) view.findViewById(R.id.install);
         getChildFragmentManager().beginTransaction()
-                .replace(R.id.content,meNotesFragement)
+                .replace(R.id.center_content,meNotesFragement)
                 .commit();
         txtNote.setOnClickListener(this);
         txtCollection.setOnClickListener(this);
@@ -53,13 +54,13 @@ public class MeFrament extends Fragment implements View.OnClickListener{
                 startActivity(intent);
                 break;
             case R.id.install:
-                Intent intent1 = new Intent(getActivity(),MeActivity.class);
+                Intent intent1 = new Intent(getActivity(),InstallActivity.class);
                 startActivity(intent1);
                 break;
             case R.id.collection:
                 this.getChildFragmentManager()
                         .beginTransaction()
-                        .replace(R.id.content,meCollectionFragment)
+                        .replace(R.id.center_content,meCollectionFragment)
                         .commit();
                 txtCollection.setTextColor(Color.parseColor("#ff2843"));
                 txtNote.setTextColor(Color.parseColor("#333333"));
@@ -67,7 +68,7 @@ public class MeFrament extends Fragment implements View.OnClickListener{
             case R.id.notes:
                 this.getChildFragmentManager()
                         .beginTransaction()
-                        .replace(R.id.content,meNotesFragement)
+                        .replace(R.id.center_content,meNotesFragement)
                         .commit();
                 txtCollection.setTextColor(Color.parseColor("#333333"));
                 txtNote.setTextColor(Color.parseColor("#ff2843"));

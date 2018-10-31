@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ljy.red.WelfareSeedingActivity"
     android:orientation="vertical">
     <ScrollView
         android:layout_width="match_parent"
@@ -26,18 +25,20 @@
                     android:layout_height="40dp"
                     android:gravity="center"
                     android:text="气场全开 秒变超模高级脸"
+                    android:textColor="@color/colorAccent"
                     android:textSize="20sp" />
             </LinearLayout>
+            <!--
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:orientation="vertical">
+
+                        </LinearLayout>-->
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:orientation="vertical">
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
                 android:layout_height="199dp">
 
                 <ImageView
@@ -48,16 +49,26 @@
                     android:src="@drawable/supermodel" />
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:orientation="vertical">
+            <!--            <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:orientation="vertical">
 
-            </LinearLayout>
+                        </LinearLayout>-->
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="60dp"
+                android:gravity="center"
+                android:text="各种优惠商品等你来抢购!"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="159dp"
+                android:layout_marginTop="20dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -186,13 +197,16 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="150dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:weightSum="1">
 
                     <Button
+                        android:id="@+id/button2"
                         android:layout_width="match_parent"
-                        android:layout_height="156dp"
+                        android:layout_height="86dp"
                         android:text="点击查看更多"
-                        android:textSize="10sp"/>
+                        android:textColor="@color/colorAccent"
+                        android:textSize="10sp" />
                 </LinearLayout>
 
             </LinearLayout>

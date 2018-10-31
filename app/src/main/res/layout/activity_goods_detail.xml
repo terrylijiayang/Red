@@ -78,56 +78,34 @@
                     android:textColor="#ffffff"
                     android:visibility="visible" />
                 <!--129元-->
-                <LinearLayout
-                    android:id="@+id/bargin_1"
+                <TextView
+                    android:id="@+id/textView5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-                    <TextView
-                        android:id="@+id/textView5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:textStyle="bold"
-                        android:text="¥129  "
-                        android:textColor="@color/red"
-                        android:textSize="24sp" />
-                </LinearLayout>
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:text="¥129  "
+                    android:textColor="@color/red"
+                    android:textSize="24sp" />
                 <!--原价 打折力度-->
-                <LinearLayout
-                    android:id="@+id/bargin_2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-                    <TextView
-                        android:id="@+id/component_number"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="¥202 6.4折 "
-                        android:textSize="14sp" />
-                </LinearLayout>
-                <!--包邮-->
-                <LinearLayout
-                    android:id="@+id/bargin_3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
 
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="30dp"
-                        android:layout_height="17dp"
-                        android:background="@drawable/zhy_bt_shape_white"
-                        android:gravity="center"
-                        android:text="包邮"
-                        android:textColor="#ff2742" />
-                </LinearLayout>
+                <TextView
+                    android:id="@+id/component_number"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="¥202 6.4折 "
+                    />
+
+                <!--包邮-->
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="30dp"
+                    android:layout_height="17dp"
+                    android:background="@drawable/zhy_bt_shape_white"
+                    android:layout_gravity="center"
+                    android:text="包邮"
+                    android:textColor="#ff2742" />
                 <!--跨境税-->
                 <LinearLayout
                     android:id="@+id/bargin_4"
@@ -568,7 +546,7 @@
             android:gravity="center"
             android:layout_marginTop="3dp"
             android:layout_marginLeft="30dp"
-            android:layout_width="50dp"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_weight="1">
             <ImageView
@@ -592,7 +570,7 @@
             android:layout_marginTop="3dp"
             android:layout_marginLeft="40dp"
             android:gravity="center"
-            android:layout_width="60dp"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_weight="1">
             <ImageView
@@ -619,13 +597,13 @@
             android:layout_weight="1">
             <Button
                 android:id="@+id/intoCart"
-                android:layout_width="140dp"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
+                android:layout_gravity="center"
                 android:background="#FE7E8D"
                 android:text="加入购物车"
                 android:textColor="#ffffff"
                 tools:ignore="HardcodedText" />
-
         </LinearLayout>
 
         <!--立即购买-->
@@ -637,10 +615,11 @@
             android:layout_weight="1">
             <Button
                 android:id="@+id/buy"
-                android:layout_width="110dp"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:background="@color/red"
                 android:onClick="into_shoppingcart"
+                android:layout_gravity="center"
                 android:text="立即购买"
                 android:textColor="#ffffff"
                 />

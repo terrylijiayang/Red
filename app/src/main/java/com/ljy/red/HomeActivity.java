@@ -35,13 +35,14 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         init();
         this.getSupportFragmentManager()
                 .beginTransaction()
-                .add(R.id.container_content,mainFragment)
+                .replace(R.id.container_content,mainFragment)
+               /* .add(R.id.container_content,mainFragment)
                 .add(R.id.container_content,shopFragment)
                 .hide(shopFragment)
                 .add(R.id.container_content,messageFragment)
                 .hide(messageFragment)
                 .add(R.id.container_content,meFrament)
-                .hide(meFrament)
+                .hide(meFrament)*/
                 .commit();
     }
 
@@ -63,37 +64,25 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.menu_main: //首页
                 this.getSupportFragmentManager()
                         .beginTransaction()
-                        .show(mainFragment)
-                        .hide(shopFragment)
-                        .hide(messageFragment)
-                        .hide(meFrament)
+                        .replace(R.id.container_content,mainFragment)
                         .commit();
                 break;
             case R.id.menu_shop: //商城
                 this.getSupportFragmentManager()
                         .beginTransaction()
-                        .hide(mainFragment)
-                        .show(shopFragment)
-                        .hide(messageFragment)
-                        .hide(meFrament)
+                        .replace(R.id.container_content,shopFragment)
                         .commit();
                 break;
             case R.id.menu_message: //消息
                 this.getSupportFragmentManager()
                         .beginTransaction()
-                        .hide(mainFragment)
-                        .hide(shopFragment)
-                        .show(messageFragment)
-                        .hide(meFrament)
+                        .replace(R.id.container_content,messageFragment)
                         .commit();
                 break;
             case R.id.menu_me: //我的
                 this.getSupportFragmentManager()
                         .beginTransaction()
-                        .hide(mainFragment)
-                        .hide(shopFragment)
-                        .hide(messageFragment)
-                        .show(meFrament)
+                        .replace(R.id.container_content,meFrament)
                         .commit();
                 break;
         }

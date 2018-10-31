@@ -154,38 +154,5 @@ public class ShopFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-       /* switch (v.getId()){
-            case R.id.rec: //推荐
-                this.getChildFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.main_body,fragment1Fragment)
-                        .commit();
-                break;
-            case R.id.person: //个人护理
-                this.getChildFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.main_body,fragment4Fragment)
-                        .commit();
-                break;
-            case R.id.beauty: //个人护理
-                this.getChildFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.main_body,fragment3Fragment)
-                        .commit();
-                break;
-
-            case R.id.care: //个人护理
-                this.getChildFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.main_body,fragment5Fragment)
-                        .commit();
-                break;
-            case R.id.bady: //个人护理
-                this.getChildFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.main_body,fragment2Fragment)
-                        .commit();
-                break;
-        }*/
     }
 }
