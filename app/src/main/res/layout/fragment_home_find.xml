@@ -22,6 +22,7 @@
 
 
                 <LinearLayout
+                    android:id="@+id/home_find_mess1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
